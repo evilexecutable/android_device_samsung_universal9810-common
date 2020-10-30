@@ -431,10 +431,10 @@ on post-fs-data
     chmod 0644 /dev/freezer/olaf/freezer.state
 
 # Samsung Pay
-    mkdir /efs/pfw_data 0760 spay spay
+    mkdir /efs/pfw_data 0760 system system
 
 # MST/NFC Switch
-    chown spay system /dev/mst_ctrl
+    chown system system /dev/mst_ctrl
     chmod 0660 /dev/mst_ctrl
 
 # Permision for xlat control
